@@ -1,16 +1,25 @@
-const menuButton = document.querySelector(".menu-button");
-const nav = document.querySelector(".nav");
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
 
-if (menuButton && nav) {
-  menuButton.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    menuButton.setAttribute("aria-expanded", String(isOpen));
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  nav.querySelectorAll("a").forEach((link) => {
+  mainNav.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
     });
+  });
+}
+
+const contactButton = document.getElementById("contactButton");
+if (contactButton) {
+  contactButton.addEventListener("click", () => {
+    const user = "admin";
+    const host = "baldmindtechnologies.com";
+    window.location.href = `mailto:${user}@${host}?subject=Bald%20Mind%20Technologies%20Inquiry`;
   });
 }

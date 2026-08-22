@@ -2,163 +2,193 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Bald Mind Technologies LLC builds intelligent, intuitive technology solutions for real-world problems.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#02060d">
+  <meta name="description" content="Bald Mind Technologies LLC builds practical, intelligent technology designed for real life.">
   <title>Bald Mind Technologies</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="shell nav-wrap">
-      <a class="brand" href="#home" aria-label="Bald Mind Technologies home">
-        <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="logo-link" href="#home" aria-label="Bald Mind Technologies home">
+      <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="active" href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#products">PRODUCT</a>
+      <a href="#contact">CONTACT</a>
+      <a class="nav-button" href="#contact">GET IN TOUCH</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-globe" aria-hidden="true">
+    <img src="Assets/world-globe.png" alt="">
+  </div>
+
+  <div class="shell hero-inner">
+    <div class="hero-copy">
+      <h1>
+        SMART IDEAS.<br>
+        <span>BOLD</span> SOLUTIONS.<br>
+        BUILT FOR TOMORROW.
+      </h1>
+
+      <div class="blue-rule"></div>
+
+      <p>
+        Bald Mind Technologies LLC is an independent technology company focused
+        on building intelligent, intuitive solutions that solve real problems
+        and make life simpler, smarter, and more connected.
+      </p>
+
+      <a class="outline-button" href="#about">
+        <span class="circle-arrow">→</span>
+        LEARN MORE ABOUT US
       </a>
+    </div>
+  </div>
+</section>
 
-      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+<section class="products" id="products">
+  <div class="shell">
+    <div class="weather-card">
+
+      <div class="weather-copy">
+        <p class="green-kicker">INTRODUCING</p>
+
+        <h2>
+          WEATHER<br>
+          <span>GREENLIGHT</span>
+        </h2>
+
+        <h3>Know Before You Go.</h3>
+
+        <div class="green-rule"></div>
+
+        <p class="weather-description">
+          A smarter way to turn weather information into confident everyday decisions.
+        </p>
+
+        <span class="coming-soon">COMING SOON</span>
+      </div>
+
+      <div class="weather-visual">
+        <div class="radar-ring ring1"></div>
+        <div class="radar-ring ring2"></div>
+        <div class="radar-ring ring3"></div>
+        <div class="radar-glow"></div>
+
+        <img
+          src="Assets/weather-greenlight-phone.png"
+          alt="Weather Greenlight app preview"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="shell about-grid">
+
+    <div class="about-art">
+      <div class="about-light"></div>
+      <img src="Assets/bmt-head.png" alt="">
+    </div>
+
+    <div class="about-copy">
+      <p class="blue-kicker">ABOUT BALD MIND TECHNOLOGIES</p>
+
+      <h2>
+        Technology with purpose.<br>
+        Built for real life.
+      </h2>
+
+      <div class="blue-rule"></div>
+
+      <p>
+        We are a small, independent team passionate about creating practical
+        technology that helps people make better decisions, save time, stay
+        informed, and live with confidence.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="shell">
+    <div class="contact-bar">
+      <div class="mail-icon" aria-hidden="true">✉</div>
+
+      <div class="contact-copy">
+        <h2>Let’s build something great together.</h2>
+        <p>Have a question, idea, or partnership opportunity?<br>We’d love to hear from you.</p>
+      </div>
+
+      <button class="contact-button" id="contactButton" type="button">
+        <span>✉</span>
+        CONTACT US
       </button>
-
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Product</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Get in Touch</a>
-      </nav>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-orbit orbit-one"></div>
-      <div class="hero-orbit orbit-two"></div>
+</main>
 
-      <div class="hero-globe" aria-hidden="true">
-        <img src="Assets/world-globe.png" alt="">
-      </div>
+<footer class="site-footer">
+  <div class="shell footer-grid">
 
-      <div class="shell hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">BALD MIND TECHNOLOGIES LLC</p>
-
-          <h1>
-            SMART IDEAS.<br>
-            <span>BOLD</span> SOLUTIONS.<br>
-            BUILT FOR TOMORROW.
-          </h1>
-
-          <div class="accent-line"></div>
-
-          <p class="lead">
-            An independent technology company focused on creating intelligent,
-            intuitive solutions that solve real problems and make life simpler,
-            smarter, and more connected.
-          </p>
-
-          <a class="button primary" href="#about">
-            <span class="button-icon">→</span>
-            Learn More About Us
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-fade"></div>
-    </section>
-
-    <section class="product-section" id="products">
-      <div class="shell">
-        <div class="product-card">
-          <div class="product-copy">
-            <p class="eyebrow green">INTRODUCING</p>
-            <h2>WEATHER<br><span>GREENLIGHT</span></h2>
-            <h3>Know Before You Go.</h3>
-            <div class="accent-line green-line"></div>
-            <p>
-              A smarter way to turn weather information into confident,
-              everyday decisions.
-            </p>
-            <span class="status-pill">COMING SOON</span>
-          </div>
-
-          <div class="product-visual">
-            <div class="product-glow"></div>
-            <img src="Assets/weather-greenlight-phone.png" alt="Weather Greenlight app preview">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section" id="about">
-      <div class="shell about-grid">
-        <div class="about-logo-wrap">
-          <div class="about-glow"></div>
-          <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
-        </div>
-
-        <div class="about-copy">
-          <p class="eyebrow">ABOUT BALD MIND TECHNOLOGIES</p>
-          <h2>Technology with purpose.<br>Built for real life.</h2>
-          <div class="accent-line"></div>
-          <p>
-            Bald Mind Technologies is focused on practical, forward-looking
-            technology that helps people make better decisions, save time,
-            stay informed, and move through everyday life with more confidence.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="shell">
-        <div class="contact-card">
-          <div>
-            <p class="eyebrow">LET'S CONNECT</p>
-            <h2>Let’s build something great together.</h2>
-            <p>
-              Have a question, idea, or partnership opportunity? We’d love to hear from you.
-            </p>
-          </div>
-
-          <a class="button secondary" href="mailto:admin@baldmindtechnologies.com">
-            Contact Bald Mind Technologies
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div class="footer-brand">
-        <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
-        <p>Smart ideas. Bold solutions.<br>Built for tomorrow.</p>
-      </div>
-
-      <div class="footer-column">
-        <h3>Company</h3>
-        <a href="#about">About Us</a>
-        <a href="#products">What We Build</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="footer-column">
-        <h3>Product</h3>
-        <a href="#products">Weather Greenlight</a>
-        <span>Coming Soon</span>
-      </div>
-
-      <div class="footer-column">
-        <h3>Legal</h3>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-      </div>
+    <div class="footer-brand">
+      <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
+      <p>Smart ideas. Bold solutions.<br>Built for tomorrow.</p>
     </div>
 
-    <div class="shell footer-bottom">
-      <p>© 2026 Bald Mind Technologies LLC. All rights reserved.</p>
+    <div class="footer-column">
+      <h3>COMPANY</h3>
+      <a href="#about">About Us</a>
+      <a href="#about">Our Story</a>
+      <a href="#products">What We Build</a>
+      <a href="#contact">Contact</a>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="footer-column">
+      <h3>PRODUCT</h3>
+      <a href="#products">Weather Greenlight</a>
+      <span>(Coming Soon)</span>
+    </div>
+
+    <div class="footer-column">
+      <h3>SUPPORT</h3>
+      <a href="#contact">App Support</a>
+      <a href="#contact">FAQ</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>LEGAL</h3>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+
+  </div>
+
+  <div class="shell footer-bottom">
+    © 2026 Bald Mind Technologies LLC. All rights reserved.
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
