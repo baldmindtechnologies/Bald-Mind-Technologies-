@@ -130,18 +130,52 @@
 
 <section class="contact" id="contact">
   <div class="shell">
-    <div class="contact-bar">
-      <div class="mail-icon" aria-hidden="true">✉</div>
-
-      <div class="contact-copy">
+    <div class="contact-panel">
+      <div class="contact-intro">
+        <div class="mail-icon" aria-hidden="true">✉</div>
+        <p class="blue-kicker">GET IN TOUCH</p>
         <h2>Let’s build something great together.</h2>
-        <p>Have a question, idea, or partnership opportunity?<br>We’d love to hear from you.</p>
+        <p>
+          Have a question, idea, or partnership opportunity?
+          Send us a message and we’ll get back with you.
+        </p>
       </div>
 
-      <button class="contact-button" id="contactButton" type="button">
-        <span>✉</span>
-        CONTACT US
-      </button>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mdenjpbr"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New Bald Mind Technologies website inquiry">
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button class="contact-submit" type="submit">
+          <span>✉</span>
+          SEND MESSAGE
+        </button>
+      </form>
     </div>
   </div>
 </section>

@@ -14,12 +14,3 @@ if (menuToggle && mainNav) {
     });
   });
 }
-
-const contactButton = document.getElementById("contactButton");
-if (contactButton) {
-  contactButton.addEventListener("click", () => {
-    const user = "admin";
-    const host = "baldmindtechnologies.com";
-    window.location.href = `mailto:${user}@${host}?subject=Bald%20Mind%20Technologies%20Inquiry`;
-  });
-}
