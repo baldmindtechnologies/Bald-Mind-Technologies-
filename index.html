@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bald Mind Technologies LLC builds practical technology for real-world decisions. Introducing Weather Greenlight — coming soon.">
-  <meta name="theme-color" content="#030712">
-  <title>Bald Mind Technologies | Weather Greenlight Coming Soon</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Bald Mind Technologies LLC builds intelligent, intuitive technology solutions for real-world problems.">
+  <title>Bald Mind Technologies</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="shell nav">
+    <div class="shell nav-wrap">
       <a class="brand" href="#home" aria-label="Bald Mind Technologies home">
         <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
       </a>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a class="active" href="#home">Home</a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#product">Product</a>
+        <a href="#products">Product</a>
         <a href="#contact">Contact</a>
         <a class="nav-cta" href="#contact">Get in Touch</a>
       </nav>
@@ -26,103 +29,100 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="globe-wrap" aria-hidden="true">
-        <div class="globe">
-          <div class="globe-shine"></div>
-          <div class="orbit orbit-a"></div>
-          <div class="orbit orbit-b"></div>
-          <div class="orbit orbit-c"></div>
-          <i class="node n1"></i><i class="node n2"></i><i class="node n3"></i>
-          <i class="node n4"></i><i class="node n5"></i><i class="node n6"></i>
-          <i class="node n7"></i><i class="node n8"></i><i class="node n9"></i>
-        </div>
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+
+      <div class="hero-globe" aria-hidden="true">
+        <img src="Assets/world-globe.png" alt="">
       </div>
 
-      <div class="shell hero-grid">
+      <div class="shell hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Bald Mind Technologies LLC</p>
+          <p class="eyebrow">BALD MIND TECHNOLOGIES LLC</p>
+
           <h1>
-            <span>Smart ideas.</span>
-            <span><b>Bold</b> solutions.</span>
-            <span>Built for tomorrow.</span>
+            SMART IDEAS.<br>
+            <span>BOLD</span> SOLUTIONS.<br>
+            BUILT FOR TOMORROW.
           </h1>
-          <div class="rule"></div>
-          <p class="hero-text">
-            Bald Mind Technologies LLC is an independent technology company focused on building
-            intelligent, intuitive solutions that solve real problems and make life simpler,
+
+          <div class="accent-line"></div>
+
+          <p class="lead">
+            An independent technology company focused on creating intelligent,
+            intuitive solutions that solve real problems and make life simpler,
             smarter, and more connected.
           </p>
-          <a class="button outline" href="#about">
-            <span class="button-icon">→</span> Learn More About Us
+
+          <a class="button primary" href="#about">
+            <span class="button-icon">→</span>
+            Learn More About Us
           </a>
         </div>
-
-        <div class="hero-phone" aria-label="Weather Greenlight splash screen preview">
-          <img src="Assets/weather-greenlight-phone.png" alt="Weather Greenlight splash screen preview">
-        </div>
       </div>
+
+      <div class="hero-fade"></div>
     </section>
 
-    <section id="product" class="product-section">
+    <section class="product-section" id="products">
       <div class="shell">
         <div class="product-card">
           <div class="product-copy">
-            <div class="weather-mark" aria-hidden="true">
-              <span class="sun"></span>
-              <span class="cloud"></span>
-            </div>
-            <div>
-              <p class="eyebrow green">Introducing</p>
-              <h2>Weather <span>Greenlight</span><sup>®</sup></h2>
-              <p class="tagline">Know Before You Go.</p>
-              <div class="green-rule"></div>
-              <p class="product-text">
-                A smarter way to turn weather information into confident everyday decisions.
-              </p>
-            </div>
+            <p class="eyebrow green">INTRODUCING</p>
+            <h2>WEATHER<br><span>GREENLIGHT</span></h2>
+            <h3>Know Before You Go.</h3>
+            <div class="accent-line green-line"></div>
+            <p>
+              A smarter way to turn weather information into confident,
+              everyday decisions.
+            </p>
+            <span class="status-pill">COMING SOON</span>
           </div>
 
-          <div class="divider"></div>
-
-          <div class="coming-soon">
-            <div class="calendar-icon" aria-hidden="true">▦</div>
-            <div>
-              <p class="eyebrow green">Coming Soon</p>
-              <p>Weather Greenlight is in development.</p>
-              <p class="muted">Launching soon on iPhone and Android.</p>
-            </div>
+          <div class="product-visual">
+            <div class="product-glow"></div>
+            <img src="Assets/weather-greenlight-phone.png" alt="Weather Greenlight app preview">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about-section">
+    <section class="about-section" id="about">
       <div class="shell about-grid">
-        <div class="head-graphic" aria-hidden="true">
-          <div class="head-ring"></div>
-          <div class="head">⌁</div>
+        <div class="about-logo-wrap">
+          <div class="about-glow"></div>
+          <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
         </div>
+
         <div class="about-copy">
-          <p class="eyebrow blue">About Bald Mind Technologies</p>
+          <p class="eyebrow">ABOUT BALD MIND TECHNOLOGIES</p>
           <h2>Technology with purpose.<br>Built for real life.</h2>
-          <div class="rule"></div>
+          <div class="accent-line"></div>
           <p>
-            We are a small, independent team passionate about creating practical technology that
-            helps people make better decisions, save time, stay informed, and live with confidence.
+            Bald Mind Technologies is focused on practical, forward-looking
+            technology that helps people make better decisions, save time,
+            stay informed, and move through everyday life with more confidence.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact-section">
-      <div class="shell contact-card">
-        <div class="contact-icon" aria-hidden="true">✉</div>
-        <div class="contact-copy">
-          <h3>Let’s build something great together.</h3>
-          <p>Have a question, idea, or partnership opportunity? Use our contact form and we’ll get back to you.</p>
+    <section class="contact-section" id="contact">
+      <div class="shell">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Let’s build something great together.</h2>
+            <p>
+              Have a question, idea, or partnership opportunity? We’d love to hear from you.
+            </p>
+          </div>
+
+          <a class="button secondary" href="mailto:admin@baldmindtechnologies.com">
+            Contact Bald Mind Technologies
+          </a>
         </div>
-        <button class="button contact-button" type="button" data-open-contact>Get in Touch</button>
       </div>
     </section>
   </main>
@@ -134,65 +134,30 @@
         <p>Smart ideas. Bold solutions.<br>Built for tomorrow.</p>
       </div>
 
-      <div>
-        <h4>Company</h4>
+      <div class="footer-column">
+        <h3>Company</h3>
         <a href="#about">About Us</a>
-        <a href="#about">Our Story</a>
+        <a href="#products">What We Build</a>
         <a href="#contact">Contact</a>
       </div>
 
-      <div>
-        <h4>Product</h4>
-        <a href="#product">Weather Greenlight</a>
-        <span class="muted">(Coming Soon)</span>
+      <div class="footer-column">
+        <h3>Product</h3>
+        <a href="#products">Weather Greenlight</a>
+        <span>Coming Soon</span>
       </div>
 
-      <div>
-        <h4>Support</h4>
-        <a href="#contact">Support</a>
-        <a href="#contact">FAQ</a>
-      </div>
-
-      <div>
-        <h4>Legal</h4>
+      <div class="footer-column">
+        <h3>Legal</h3>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
       </div>
     </div>
-    <div class="shell copyright">© 2026 Bald Mind Technologies LLC. All rights reserved.</div>
+
+    <div class="shell footer-bottom">
+      <p>© 2026 Bald Mind Technologies LLC. All rights reserved.</p>
+    </div>
   </footer>
-
-  <dialog class="contact-dialog" id="contactDialog">
-    <form class="contact-form" method="dialog">
-      <button class="close" value="cancel" aria-label="Close contact form">×</button>
-      <p class="eyebrow blue">Contact Bald Mind Technologies</p>
-      <h2>Get in touch</h2>
-      <p class="form-intro">Send us a message without exposing our business email address on the page.</p>
-
-      <label>
-        Name
-        <input name="name" autocomplete="name" required>
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" autocomplete="email" required>
-      </label>
-      <label>
-        Subject
-        <input name="subject" required>
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="6" required></textarea>
-      </label>
-
-      <p class="form-note">
-        This visual form is ready for a secure form-service endpoint. Add your Formspree, Cloudflare
-        Worker, or other form endpoint in <code>script.js</code> before enabling live submissions.
-      </p>
-      <button class="button submit-button" type="submit">Close</button>
-    </form>
-  </dialog>
 
   <script src="script.js"></script>
 </body>
