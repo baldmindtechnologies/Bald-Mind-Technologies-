@@ -464,6 +464,43 @@ button{font:inherit}
 .legal-card p,.legal-card li{color:#c8ced8;line-height:1.7}
 .legal-card a{color:#29a4ff}
 
+.legal-header{min-height:92px}
+.legal-nav{display:flex;align-items:center;gap:24px;color:#d9dde5;font-size:13px;font-weight:700}
+.legal-nav a:hover{color:#38b6ff}
+.page-kicker{margin:20px 0 10px!important;color:#38b6ff!important;font-size:12px!important;font-weight:800;letter-spacing:.12em}
+.support-product{margin:28px 0;padding:24px;border:1px solid rgba(56,182,255,.25);border-radius:12px;background:rgba(13,140,255,.06)}
+.compact-footer .footer-bottom{padding-bottom:6px;line-height:1.8}
+.compact-footer a{color:#38b6ff}
+
+/* Streak Runner */
+.streak-page{background:#0b031b}
+.streak-header{background:rgba(11,3,27,.95)}
+.streak-hero{position:relative;overflow:hidden;padding:90px 0;background:radial-gradient(circle at 75% 50%,rgba(50,184,255,.20),transparent 27%),radial-gradient(circle at 70% 75%,rgba(255,176,36,.22),transparent 25%),linear-gradient(145deg,#16082d,#0b031b 64%)}
+.streak-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;min-height:540px}
+.streak-kicker{margin:0 0 14px;color:#ffba35;font-size:13px;font-weight:900;letter-spacing:.16em}
+.streak-hero h1{margin:0;font-size:clamp(64px,8vw,112px);line-height:.82;letter-spacing:-.07em}
+.streak-hero h1 span{background:linear-gradient(90deg,#ffbd35,#ff4e95);-webkit-background-clip:text;background-clip:text;color:transparent}
+.streak-tagline{margin:28px 0 15px;font-size:28px;font-weight:800}
+.streak-lead{max-width:610px;margin:0;color:#d7d0e4;font-size:18px;line-height:1.65}
+.streak-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:30px}
+.streak-price{padding:14px 20px;border-radius:999px;background:linear-gradient(90deg,#ffba2f,#ff5794);color:#230b2e;font-size:13px;font-weight:900}
+.streak-orbit{position:relative;min-height:480px;border-radius:42px;background:radial-gradient(circle at 50% 65%,rgba(255,187,50,.24),transparent 31%),rgba(5,2,20,.48);border:1px solid rgba(255,255,255,.09);box-shadow:0 40px 100px rgba(0,0,0,.35)}
+.streak-ball{position:absolute;left:50%;bottom:70px;width:190px;height:190px;transform:translateX(-50%);border-radius:50%;background:linear-gradient(145deg,#ffc165,#ff668f);box-shadow:0 0 60px rgba(255,174,44,.62)}
+.streak-orbit i{position:absolute;display:block;height:50px;border-radius:18px;box-shadow:0 0 28px currentColor}
+.block-a{top:90px;left:45px;width:145px;background:#45ced9;color:#45ced9;transform:rotate(15deg)}
+.block-b{top:55px;right:38px;width:125px;background:#805df0;color:#805df0;transform:rotate(-9deg)}
+.block-c{top:210px;right:15px;width:105px;background:#ee4d87;color:#ee4d87;transform:rotate(9deg)}
+.streak-features{padding:85px 0;background:#0b031b}
+.streak-features> .shell > h2{margin:0 0 34px;font-size:clamp(34px,4vw,52px)}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feature-grid article{padding:28px;border:1px solid rgba(255,255,255,.10);border-radius:18px;background:#160c29}
+.feature-grid strong{display:block;color:#ffba35;font-size:36px}
+.feature-grid h3{margin:13px 0 8px;font-size:19px}
+.feature-grid p{margin:0;color:#bfb7ce;line-height:1.55}
+.streak-promise{margin-top:28px;padding:38px;border:1px solid rgba(255,89,151,.27);border-radius:20px;background:linear-gradient(115deg,rgba(255,185,47,.08),rgba(255,78,149,.08))}
+.streak-promise h2{margin:0 0 10px;font-size:30px}
+.streak-promise p{margin:0;color:#d6cede;font-size:17px;line-height:1.6}
+
 /* Tablet */
 @media (max-width:900px){
   .header-inner{min-height:82px}
@@ -592,6 +629,18 @@ button{font:inherit}
   .footer-brand{
     grid-column:1/-1;
   }
+  .legal-header{min-height:88px;align-items:center}
+  .legal-header .logo-link img{width:185px}
+  .legal-nav{gap:12px;font-size:11px}
+  .legal-card{padding:28px 22px}
+  .legal-card h1{font-size:38px}
+  .streak-hero{padding:54px 0}
+  .streak-hero-grid{grid-template-columns:1fr;gap:34px;min-height:0}
+  .streak-hero h1{font-size:72px}
+  .streak-tagline{font-size:23px}
+  .streak-orbit{min-height:410px}
+  .streak-ball{width:160px;height:160px;bottom:58px}
+  .feature-grid{grid-template-columns:1fr 1fr}
 }
 
 @media (max-width:430px){
@@ -605,6 +654,12 @@ button{font:inherit}
   .weather-copy h2{font-size:41px}
   .footer-grid{grid-template-columns:1fr}
   .footer-brand{grid-column:auto}
+  .legal-header{display:block;padding:16px 0}
+  .legal-nav{margin-top:14px;justify-content:space-between}
+  .streak-hero h1{font-size:60px}
+  .streak-orbit{min-height:360px}
+  .streak-ball{width:140px;height:140px}
+  .feature-grid{grid-template-columns:1fr}
 }
 
 /* iPhone/mobile globe visibility correction */
