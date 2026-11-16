@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#02060d">
-  <meta name="description" content="Bald Mind Technologies LLC creates practical technology and original iPhone games, including Weather Greenlight, Streak Runner, and One More Try: Bounce.">
+  <meta name="description" content="Bald Mind Technologies LLC builds apps and iPhone games, including Weather Greenlight, Brothers In Christ, Streak Runner, and One More Try: Bounce.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="author" content="Bald Mind Technologies LLC">
   <link rel="canonical" href="https://baldmindtechnologies.com/">
@@ -13,13 +13,13 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bald Mind Technologies">
   <meta property="og:title" content="Bald Mind Technologies | Apps and Games Built for Real Life">
-  <meta property="og:description" content="Discover Weather Greenlight, Streak Runner, and One More Try: Bounce from Bald Mind Technologies.">
+  <meta property="og:description" content="Explore apps and games from Bald Mind Technologies, including Weather Greenlight, Brothers In Christ, Streak Runner, and One More Try: Bounce.">
   <meta property="og:url" content="https://baldmindtechnologies.com/">
   <meta property="og:image" content="https://baldmindtechnologies.com/Assets/bmt-logo.png">
   <meta property="og:image:alt" content="Bald Mind Technologies logo">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bald Mind Technologies | Apps and Games Built for Real Life">
-  <meta name="twitter:description" content="Discover Weather Greenlight, Streak Runner, and One More Try: Bounce from Bald Mind Technologies.">
+  <meta name="twitter:description" content="Explore apps and games from Bald Mind Technologies, including Weather Greenlight, Brothers In Christ, Streak Runner, and One More Try: Bounce.">
   <meta name="twitter:image" content="https://baldmindtechnologies.com/Assets/bmt-logo.png">
 
   <title>Bald Mind Technologies | Apps and Games Built for Real Life</title>
@@ -55,7 +55,7 @@
         "applicationCategory": "WeatherApplication",
         "operatingSystem": "iOS",
         "description": "A smarter way to turn weather information into confident everyday decisions.",
-        "url": "https://baldmindtechnologies.com/#products",
+        "url": "https://baldmindtechnologies.com/#weather-greenlight",
         "publisher": {
           "@id": "https://baldmindtechnologies.com/#organization"
         }
@@ -66,8 +66,22 @@
         "name": "One More Try: Bounce",
         "applicationCategory": "GameApplication",
         "operatingSystem": "iOS",
-        "description": "A fast one-tap arcade game where players jump over obstacles, unlock rewards, and chase their high score.",
+        "description": "A fast one-tap arcade game with changing worlds and unlockable rewards.",
         "url": "https://baldmindtechnologies.com/one-more-try.html",
+        "downloadUrl": "https://apps.apple.com/us/app/one-more-try-bounce/id6815006684",
+        "publisher": {
+          "@id": "https://baldmindtechnologies.com/#organization"
+        }
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://baldmindtechnologies.com/streak-runner.html#game",
+        "name": "Streak Runner",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "iOS",
+        "description": "An arcade game with falling obstacles, four difficulty modes, and daily challenges.",
+        "url": "https://baldmindtechnologies.com/streak-runner.html",
+        "downloadUrl": "https://apps.apple.com/us/app/streak-runner/id6812554713",
         "publisher": {
           "@id": "https://baldmindtechnologies.com/#organization"
         }
@@ -84,14 +98,14 @@
       <img src="Assets/bmt-logo.png" alt="Bald Mind Technologies">
     </a>
 
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="main-nav" aria-label="Primary navigation">
+    <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
       <a class="active" href="#home">HOME</a>
       <a href="#about">ABOUT</a>
-      <a href="#products">PRODUCT</a>
+      <a href="#products">APPS</a>
       <a href="#contact">CONTACT</a>
       <a class="nav-button" href="#contact">GET IN TOUCH</a>
     </nav>
@@ -101,16 +115,12 @@
 <main>
 
 <section class="hero" id="home">
-  <div class="hero-globe" aria-hidden="true">
-    <img src="Assets/world-globe.png" alt="">
-  </div>
-
   <div class="shell hero-inner">
     <div class="hero-copy">
       <h1>
-        SMART IDEAS.<br>
-        <span>BOLD</span> SOLUTIONS.<br>
-        BUILT FOR TOMORROW.
+        <span class="hero-line">SMART IDEAS.</span>
+        <span class="hero-line"><em>BOLD</em> SOLUTIONS.</span>
+        <span class="hero-line">BUILT FOR TOMORROW.</span>
       </h1>
 
       <div class="blue-rule"></div>
@@ -126,59 +136,85 @@
         LEARN MORE ABOUT US
       </a>
     </div>
-  </div>
-</section>
-
-<section class="products" id="products">
-  <div class="shell">
-    <div class="weather-card">
-
-      <div class="weather-copy">
-        <p class="green-kicker">INTRODUCING</p>
-
-        <h2>
-          WEATHER<br>
-          <span>GREENLIGHT</span>
-        </h2>
-
-        <h3>Know Before You Go.</h3>
-
-        <div class="green-rule"></div>
-
-        <p class="weather-description">
-          A smarter way to turn weather information into confident everyday decisions.
-        </p>
-
-        <span class="coming-soon">COMING SOON</span>
-      </div>
-
-      <div class="weather-visual">
-        <div class="radar-ring ring1"></div>
-        <div class="radar-ring ring2"></div>
-        <div class="radar-ring ring3"></div>
-        <div class="radar-glow"></div>
-
-        <img
-          src="Assets/weather-greenlight-phone-black.png"
-          alt="Weather Greenlight app preview"
-        >
-      </div>
-
+    <div class="hero-globe" aria-hidden="true">
+      <img src="Assets/world-globe.png" width="1672" height="941" alt="">
     </div>
   </div>
 </section>
 
-<section class="home-omt" aria-labelledby="home-omt-title">
+<section class="products" id="products" aria-labelledby="apps-title">
   <div class="shell">
-    <a class="home-omt-card" href="one-more-try.html">
-      <img src="Assets/one-more-try-icon.png" alt="One More Try: Bounce app icon">
-      <div>
-        <p class="omt-kicker">NEW FROM BALD MIND TECHNOLOGIES</p>
-        <h2 id="home-omt-title">ONE MORE TRY: <span>BOUNCE</span></h2>
-        <p>Tap. Jump. Survive. Chase your best score through five changing worlds.</p>
-        <strong>EXPLORE THE GAME →</strong>
-      </div>
-    </a>
+    <h2 id="apps-title">Our apps &amp; games</h2>
+
+    <div class="app-grid">
+      <article class="app-card app-card--bounce" id="one-more-try">
+        <div class="app-mark" aria-hidden="true">
+          <img src="Assets/one-more-try-icon.png" width="1024" height="1024" alt="">
+        </div>
+        <h3>One More Try: Bounce</h3>
+        <p>Tap to jump, clear obstacles, and chase your best score through changing worlds.</p>
+        <div class="app-actions">
+          <a class="app-store-link" href="https://apps.apple.com/us/app/one-more-try-bounce/id6815006684" aria-label="One More Try: Bounce, available on the App Store">Available on the App Store</a>
+          <a class="app-detail" href="one-more-try.html" aria-label="Explore One More Try: Bounce">Explore game <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="app-card app-card--streak" id="streak-runner">
+        <div class="app-mark" aria-hidden="true">SR</div>
+        <h3>Streak Runner</h3>
+        <p>Dodge falling blocks, take on daily challenges, and climb the Game Center leaderboards.</p>
+        <div class="app-actions">
+          <a class="app-store-link" href="https://apps.apple.com/us/app/streak-runner/id6812554713" aria-label="Streak Runner, available on the App Store">Available on the App Store</a>
+          <a class="app-detail" href="streak-runner.html" aria-label="Explore Streak Runner">Explore game <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="app-card app-card--weather" id="weather-greenlight">
+        <div class="app-mark" aria-hidden="true">WG</div>
+        <h3>Weather Greenlight</h3>
+        <p>Check the forecast and find the best weather window for outdoor plans.</p>
+        <div class="app-actions">
+          <span class="app-status">Coming soon</span>
+        </div>
+      </article>
+
+      <article class="app-card app-card--bic" id="brothers-in-christ">
+        <div class="app-mark" aria-hidden="true">BiC</div>
+        <h3>Brothers In Christ</h3>
+        <p>Read and study the KJV Bible, watch faith-based videos, and share prayer requests.</p>
+        <div class="app-actions">
+          <span class="app-status">iPhone app in development</span>
+          <a class="app-detail" href="brothers-in-christ-support.html">App support <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="app-card app-card--sound" id="the-board-of-sound">
+        <div class="app-mark" aria-hidden="true">BOS</div>
+        <h3>The Board of Sound</h3>
+        <p>Analyze live audio and get practical guidance for EQ and mixing.</p>
+        <div class="app-actions">
+          <span class="app-status">In development</span>
+        </div>
+      </article>
+
+      <article class="app-card app-card--crypto" id="coolbreeze-crypto">
+        <div class="app-mark" aria-hidden="true">CC</div>
+        <h3>Coolbreeze Crypto</h3>
+        <p>Follow crypto market cycles, compare historical trends, and track a watchlist.</p>
+        <div class="app-actions">
+          <span class="app-status">In development</span>
+        </div>
+      </article>
+
+      <article class="app-card app-card--pit" id="pit-lane">
+        <div class="app-mark" aria-hidden="true">PL</div>
+        <h3>Pit Lane</h3>
+        <p>A racing game built around the speed and precision of a pit stop.</p>
+        <div class="app-actions">
+          <span class="app-status">In development</span>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -283,9 +319,8 @@
     </div>
 
     <div class="footer-column">
-      <h3>PRODUCT</h3>
-      <a href="#products">Weather Greenlight</a>
-      <span>(Coming Soon)</span>
+      <h3>APPS &amp; GAMES</h3>
+      <a href="#products">Browse all apps</a>
       <a href="streak-runner.html">Streak Runner</a>
       <a href="one-more-try.html">One More Try: Bounce</a>
     </div>
@@ -295,6 +330,7 @@
       <a href="support.html">App Support</a>
       <a href="support.html#streak-runner">Streak Runner Support</a>
       <a href="one-more-try-support.html">One More Try Support</a>
+      <a href="brothers-in-christ-support.html">Brothers In Christ Support</a>
     </div>
 
     <div class="footer-column">
