@@ -251,6 +251,19 @@ button{font:inherit}
 }
 .app-detail:hover{text-decoration:underline}
 
+/* Nationwide services with a Danville-area focus */
+.local-services{padding-block:clamp(58px,7vw,96px);border-block:1px solid var(--line);background:radial-gradient(circle at 12% 18%,rgba(0,139,255,.13),transparent 34%),linear-gradient(180deg,rgba(8,18,31,.82),rgba(2,8,15,.92))}
+.local-services-head{max-width:880px;margin-bottom:clamp(24px,4vw,42px)}
+.local-services-head h2{margin:10px 0 16px;max-width:820px;font-size:clamp(1.8rem,4vw,3.35rem);line-height:1.08;letter-spacing:-.045em}
+.local-services-head>p:last-child{margin:0;max-width:760px;color:var(--muted);font-size:clamp(1rem,1.6vw,1.125rem);line-height:1.7}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,22px)}
+.service-card{min-height:245px;padding:clamp(20px,2.5vw,30px);border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(18,37,60,.82),rgba(4,12,22,.92))}
+.service-number{display:inline-block;margin-bottom:28px;color:var(--blue2);font-size:.78rem;font-weight:800;letter-spacing:.16em}
+.service-card h3{margin:0 0 12px;font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.2}
+.service-card p{margin:0;color:var(--muted);font-size:.96rem;line-height:1.65}
+.local-service-footer{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:clamp(24px,4vw,38px)}
+.local-service-footer p{margin:0;max-width:790px;color:#d7e2eb;line-height:1.6}
+.local-service-footer strong{color:#fff}
 /* About */
 .about{
   padding:18px 0 24px;
@@ -540,6 +553,8 @@ button{font:inherit}
 /* Tablet */
 @media (max-width:1020px){
   .app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .local-service-footer{align-items:flex-start;flex-direction:column}
   .footer-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
   .footer-brand{grid-column:1/-1}
 }
@@ -585,6 +600,8 @@ button{font:inherit}
 
 @media (max-width:560px){
   .app-grid{grid-template-columns:minmax(0,1fr)}
+  .service-grid{grid-template-columns:minmax(0,1fr)}
+  .service-card{min-height:0}
   .form-row{grid-template-columns:minmax(0,1fr)}
   .contact-submit{width:100%}
 }
