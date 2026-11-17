@@ -74,7 +74,8 @@ button{font:inherit}
 }
 .nav-button::after{display:none !important}
 
-.menu-toggle{
+.menu-toggle,
+.menu-button{
   display:none;
   flex:none;
   width:46px;height:46px;
@@ -86,7 +87,8 @@ button{font:inherit}
   flex-direction:column;
   gap:6px;
 }
-.menu-toggle span{width:24px;height:2px;background:white;border-radius:20px}
+.menu-toggle span,
+.menu-button span{width:24px;height:2px;background:white;border-radius:20px}
 
 /* Hero */
 .hero{
@@ -560,7 +562,8 @@ button{font:inherit}
 }
 
 @media (max-width:760px){
-  .menu-toggle{display:flex}
+  .menu-toggle,
+  .menu-button{display:flex}
   .main-nav{
     display:none;
     position:absolute;
