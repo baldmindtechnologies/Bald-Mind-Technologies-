@@ -1,4 +1,4 @@
-const menuToggle = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".menu-toggle, .menu-button");
 const mainNav = document.querySelector(".main-nav");
 
 if (menuToggle && mainNav) {
