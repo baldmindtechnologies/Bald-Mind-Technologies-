@@ -47,7 +47,7 @@ button{font:inherit}
 .main-nav{
   display:flex;
   align-items:center;
-  gap:clamp(16px,2.8vw,39px);
+  gap:clamp(12px,2vw,28px);
   font-size:13px;
   font-weight:700;
 }
@@ -221,6 +221,7 @@ button{font:inherit}
 .app-actions{
   display:grid;
   justify-items:start;
+  gap:6px;
   margin-top:auto;
 }
 .app-store-link,
@@ -266,6 +267,18 @@ button{font:inherit}
 .local-service-footer{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:clamp(24px,4vw,38px)}
 .local-service-footer p{margin:0;max-width:790px;color:#d7e2eb;line-height:1.6}
 .local-service-footer strong{color:#fff}
+/* Website portfolio */
+.websites{padding-block:clamp(56px,7vw,92px);border-bottom:1px solid var(--line)}
+.websites h2{margin:0 0 12px;font-size:clamp(1.8rem,4vw,3.25rem);letter-spacing:-.04em}
+.websites-intro{margin:0 0 30px;color:var(--muted);line-height:1.6}
+.website-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,22px)}
+.website-card{display:flex;flex-direction:column;align-items:flex-start;min-height:260px;padding:clamp(20px,2.5vw,30px);border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#0d2033,#07111d)}
+.website-category{color:var(--blue2);font-size:.73rem;font-weight:800;letter-spacing:.12em}
+.website-card h3{margin:22px 0 10px;font-size:clamp(1.2rem,2vw,1.5rem)}
+.website-card p{margin:0 0 20px;color:var(--muted);line-height:1.6}
+.website-card a{margin-top:auto;color:var(--blue2);font-size:.92rem;font-weight:800}
+.website-card a:hover{text-decoration:underline}
+
 /* About */
 .about{
   padding:18px 0 24px;
@@ -555,7 +568,7 @@ button{font:inherit}
 /* Tablet */
 @media (max-width:1020px){
   .app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service-grid,.website-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .local-service-footer{align-items:flex-start;flex-direction:column}
   .footer-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
   .footer-brand{grid-column:1/-1}
@@ -603,7 +616,8 @@ button{font:inherit}
 
 @media (max-width:560px){
   .app-grid{grid-template-columns:minmax(0,1fr)}
-  .service-grid{grid-template-columns:minmax(0,1fr)}
+  .service-grid,.website-grid{grid-template-columns:minmax(0,1fr)}
+  .website-card{min-height:0}
   .service-card{min-height:0}
   .form-row{grid-template-columns:minmax(0,1fr)}
   .contact-submit{width:100%}
